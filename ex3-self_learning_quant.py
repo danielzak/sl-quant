@@ -14,6 +14,29 @@ from sklearn.externals import joblib
 
 import Quandl
 
+'''
+Name:        The Self Learning Quant, Example 3
+
+Author:      Daniel Zakrisson
+
+Created:     30/03/2016
+Copyright:   (c) Daniel Zakrisson 2016
+Licence:     BSD
+
+Requirements:
+Numpy
+Pandas
+MatplotLib
+scikit-learn
+TA-Lib, instructions at https://mrjbq7.github.io/ta-lib/install.html
+Keras, https://keras.io/
+Quandl, https://www.quandl.com/tools/python
+backtest.py from the TWP library. Download backtest.py and put in the same folder
+
+/plt create a subfolder in the same directory where plot files will be saved
+
+'''
+
 #Load data
 def read_convert_data(symbol='XBTEUR'):
     if symbol == 'XBTEUR':

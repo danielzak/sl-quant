@@ -10,6 +10,27 @@ from matplotlib import pyplot as plt
 
 from sklearn import metrics, preprocessing
 
+'''
+Name:        The Self Learning Quant, Example 1
+
+Author:      Daniel Zakrisson
+
+Created:     30/03/2016
+Copyright:   (c) Daniel Zakrisson 2016
+Licence:     BSD
+
+Requirements:
+Numpy
+Pandas
+MatplotLib
+scikit-learn
+Keras, https://keras.io/
+backtest.py from the TWP library. Download backtest.py and put in the same folder
+
+/plt create a subfolder in the same directory where plot files will be saved
+
+'''
+
 #Load data
 def load_data():
     price = np.arange(200/10.0) #linearly increasing prices
