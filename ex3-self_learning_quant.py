@@ -83,7 +83,7 @@ def init_state(indata, test=False):
         joblib.dump(scaler, 'data/scaler.pkl')
     elif test == True:
         scaler = joblib.load('data/scaler.pkl')
-        xdata = np.expand_dims(scaler.fit_transform(xdata), axis=1)
+        xdata = np.expand_dims(scaler.transform(xdata), axis=1)
     state = xdata[0:1, 0:1, :]
     
     return state, xdata, close
